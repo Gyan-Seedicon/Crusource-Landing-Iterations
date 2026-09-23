@@ -6,20 +6,20 @@
   <title>Crusource — The Smarter Way to Hire, Manage, and Grow Your Workforce</title>
   <meta name="description" content="Crusource combines recruitment, staffing, HR, and workforce management into one powerful platform, so your team can focus on people instead of processes." />
   
-  <!-- Google Fonts: Be Vietnam Pro -->
+  <!-- Google Fonts: DM Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style3.css" />
 </head>
 <body class="theme-editorial">
 
-  <!-- Refined Smart Navigation Bar (Hides on Scroll Down, Shows on Scroll Up) -->
+  <!-- Refined Smart Navigation Bar (From index.html) -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#" class="brand-logo" id="brand-logo">
@@ -63,7 +63,7 @@
   <!-- Main Wrapper -->
   <main class="main-wrapper">
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION (FROM index.html WITH DM SANS COMPACT TYPOGRAPHY) -->
     <section class="hero-section" id="hero-section">
       <div class="hero-container">
         
@@ -77,13 +77,13 @@
           </div>
         </div>
 
-        <!-- Headline (Strict 2 lines) -->
+        <!-- Headline (Refined, Compact Scale) -->
         <h1 class="hero-headline">
           The Smarter Way to<br/>
           <span class="headline-highlight-orange">Hire, Manage, & Grow Your Workforce.</span>
         </h1>
 
-        <!-- Subheadline Description (Balanced 2 lines) -->
+        <!-- Subheadline Description -->
         <p class="hero-description">
           Crusource combines recruitment, staffing, HR, and workforce management<br/>
           into one connected platform, so your team can focus on people instead of processes.
@@ -118,7 +118,7 @@
           </span>
         </div>
 
-        <!-- MacBook Pro 14 Visual Showcase -->
+        <!-- MacBook Pro 14 Visual Showcase (Clean, No Floating Pills) -->
         <div class="macbook-showcase-container">
           <div class="macbook-ambient-glow"></div>
           
@@ -131,27 +131,6 @@
 
             <!-- Realistic Drop Shadow Plane -->
             <div class="macbook-drop-shadow"></div>
-
-            <!-- Smart Dynamic Floating Metric Pills -->
-            <div class="floating-badge badge-top-left">
-              <div class="badge-icon-box bg-orange-soft">
-                <i class="fa-solid fa-users text-orange"></i>
-              </div>
-              <div class="badge-content">
-                <span class="badge-value">984 Employees</span>
-                <span class="badge-label">Active Workforce</span>
-              </div>
-            </div>
-
-            <div class="floating-badge badge-bottom-right">
-              <div class="badge-icon-box bg-green-soft">
-                <i class="fa-solid fa-wallet text-green"></i>
-              </div>
-              <div class="badge-content">
-                <span class="badge-value">$485,200 Disbursed</span>
-                <span class="badge-label">Automated Payroll</span>
-              </div>
-            </div>
           </div>
 
         </div>
@@ -1088,13 +1067,13 @@
       </div>
       <div class="fab-menu-body">
         
-        <button class="iteration-item active" data-version="1">
-          <div class="iter-icon"><i class="fa-solid fa-check"></i></div>
+        <button class="iteration-item" data-version="1" onclick="window.location.href='index.html'">
+          <div class="iter-icon"><i class="fa-solid fa-layer-group"></i></div>
           <div class="iter-info">
             <span class="iter-title">Iteration 1: Hero Showcase</span>
-            <span class="iter-desc">Current Active Version</span>
+            <span class="iter-desc">Standard Hero Version</span>
           </div>
-          <span class="tag-status active-tag">Active</span>
+          <span class="tag-status cs-tag">Available</span>
         </button>
 
         <button class="iteration-item" data-version="2" onclick="window.location.href='iteration2.html'">
@@ -1106,13 +1085,13 @@
           <span class="tag-status cs-tag">Available</span>
         </button>
 
-        <button class="iteration-item" data-version="3" onclick="window.location.href='iteration3.html'">
-          <div class="iter-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <button class="iteration-item active" data-version="3">
+          <div class="iter-icon"><i class="fa-solid fa-check"></i></div>
           <div class="iter-info">
             <span class="iter-title">Iteration 3: New Canvas</span>
-            <span class="iter-desc">Interactive New Version</span>
+            <span class="iter-desc">Current Active Version</span>
           </div>
-          <span class="tag-status cs-tag">Available</span>
+          <span class="tag-status active-tag">Active</span>
         </button>
 
         <button class="iteration-item coming-soon" data-version="4">
@@ -1141,7 +1120,7 @@
         <i class="fa-solid fa-layer-group fab-icon-default"></i>
         <i class="fa-solid fa-xmark fab-icon-close"></i>
       </div>
-      <span class="fab-label">v1.0 • Iteration 1</span>
+      <span class="fab-label">v3.0 • Iteration 3</span>
       <span class="fab-pulse"></span>
     </button>
   </div>
@@ -1207,5 +1186,25 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    function openDemoModal() {
+      const modal = document.getElementById('demo-modal');
+      if (modal) modal.classList.add('open');
+    }
+    function closeDemoModal() {
+      const modal = document.getElementById('demo-modal');
+      if (modal) modal.classList.remove('open');
+    }
+    function handleHeroSubmit(e) {
+      e.preventDefault();
+      const email = document.getElementById('hero-email')?.value;
+      alert(`🎉 Success! ${email || 'Your email'} has been registered. Our team will reach out with demo access.`);
+      e.target.reset();
+    }
+    // Close modal on escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDemoModal();
+    });
+  </script>
 </body>
 </html>
